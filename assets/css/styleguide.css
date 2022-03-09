@@ -1,0 +1,72 @@
+:root {
+  --black: 
+rgba(0, 0, 0, 1);
+  --shark: 
+rgba(37, 38, 38, 1);
+  --portage: 
+rgba(138, 154, 241, 1);
+  --jordy-blue: 
+rgba(138, 191, 241, 1);
+  --white: 
+rgba(255, 255, 255, 1);
+
+  --font-size-xs: 15px;
+  --font-size-s: 18px;
+  --font-size-m: 25px;
+  --font-size-l: 30px;
+  --font-size-xl: 36px;
+
+  --font-family-saira: "Saira";
+}
+
+
+
+.saira-semi-bold-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+}
+.saira-normal-white-25px {
+  color: var(--white);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.saira-normal-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
+.saira-semi-bold-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: normal;
+}
+.saira-normal-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  font-style: normal;
+}
+.saira-extra-light-jordy-blue-25px {
+  color: var(--jordy-blue);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-m);
+  font-weight: 200;
+  font-style: normal;
+}
+.saira-normal-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  font-style: normal;
+}
