@@ -74,8 +74,16 @@ rgba(255, 255, 255, 1);
   font-style: normal;
 }
 
+a{
+  color: var(--white);
+}
+a:hover{
+  color: var(--white);
+}
+
 body{
   -webkit-font-smoothing: antialiased;
+  color: var(--white);
 }
 /*main */
 
@@ -207,7 +215,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0;
   margin-top: 24px;
   min-height: 32px;
-  width: 170px;
+  width: 180px;
+  margin-left: 5px;
 }
 
 .usa-texas-state-ho {
@@ -340,7 +349,8 @@ body::-webkit-scrollbar-thumb {
   align-self: center;
   letter-spacing: 0;
   margin-left: 1px;
-  margin-top: 13px;
+  margin-top: 5px;
+  
   min-height: 48px;
   width: 226px;
 }
@@ -374,7 +384,8 @@ body::-webkit-scrollbar-thumb {
   align-self: center;
   letter-spacing: 0;
   margin-left: 1px;
-  margin-top: 6px;
+  margin-top: 5px;
+  
   min-height: 48px;
   width: 226px;
 }
@@ -484,11 +495,11 @@ body::-webkit-scrollbar-thumb {
   align-self: center;
   letter-spacing: 0;
   margin-left: 1px;
-  margin-top: 3px;
+  margin-top: 5px;
+  
   min-height: 48px;
   width: 226px;
 }
-
 .overlap-group-2 {
   align-items: flex-start;
   background-color: var(--portage);
@@ -640,7 +651,6 @@ body::-webkit-scrollbar-thumb {
 
 .pricing {
   letter-spacing: 0;
-  margin-left: 3px;
   min-height: 51px;
   text-align: center;
   width: 98px;
@@ -648,7 +658,6 @@ body::-webkit-scrollbar-thumb {
 
 .place {
   align-self: flex-end;
-  color: var(--jordy-blue);
   font-family: var(--font-family-saira);
   font-size: var(--font-size-m);
   font-weight: 400;
@@ -952,19 +961,19 @@ body::-webkit-scrollbar-thumb {
 
 
 
-.sibling-fade { visibility: hidden; }
+/*.sibling-fade { visibility: hidden; }*/
 /* Prevents :hover from triggering in the gaps between items */
 
-.sibling-fade > * { visibility: visible; }
+/*.sibling-fade > * { visibility: visible; }*/
 /* Brings the child items back in, even though the parent is `hidden` */
 
-.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+/*.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }*/
 /* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
 
-.sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+/*.sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }*/
 /* Fade out all items when the parent is hovered */
 
-.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+/*.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }*/
 /* Fade in the currently hovered item */
 
 
@@ -975,7 +984,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Presentational Styles */
 
-
+/*
 .sibling-fade {
   display: flex;
   flex-wrap: wrap;
@@ -993,3 +1002,47 @@ body::-webkit-scrollbar-thumb {
 }
 
 /**/
+
+
+/*sss*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.div-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.div-box div {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.div-box:hover div {
+    transform: scale(1.05);
+}
+
+
+.a-box {
+    position: relative;
+    overflow: hidden;
+
+    color: var(--white);
+}
+.a-box div {
+    transition: all 0.3s;
+    transform: scale(1);
+    color: var(--white);
+
+
+}
+
+.a-box:hover div {
+    color: var(--portage);
+    transform: scale(1.05);
+}
