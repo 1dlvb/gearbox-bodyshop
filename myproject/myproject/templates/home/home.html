@@ -1,3 +1,179 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags  wagtailimages_tags %}
+{% load static %}
+
+<head><title>GEARBOX Bodyshop</title></head>
+<body>
+
 {% block content %}
-        <h1>{{ self.banner_title }}</h1>
+
+  <div class="desktop-1 screen">
+  <div class="overlap-group7">
+    <div class="top-pannel">
+      <h1 class="logo saira-semi-bold-white-36px"><a href="" class="text-decoration-none">GEARBOX</a></h1>
+      <div class="mon-fri-800-am-600-pm saira-normal-white-25px">MON-FRI 8.00AM - 6.00PM</div>
+    </div>
+    <div class="flex-row">
+      <div class="homepage-contact-info">
+        <div class="repair-of-gearboxes saira-normal-white-36px">
+          REPAIR OF GEARBOXES AND ENGINES<br />INTERIOR AND BODY PARTS<br />BODY PAINTING AND EXHAUST GAS INSPECTION
+        </div>
+        <div class="contact-btn-div">
+          <a href="" class="contact-btn btn btn4 middle ">CONTACT</a>
+        </div>
+      </div>
+      <div class="nav">
+        <ui >
+
+          <div class="a-box div-box-blue"><a href="" class="text-decoration-none"><div class="pricing saira-normal-white-25px">PRICING</div></a></div>
+          <div class="a-box"><a href="" class="text-decoration-none"><div class="place saira-normal-white-25px">HOME</div></a></div>
+          <div class="a-box"><a href="" class="text-decoration-none"><div class="photos saira-normal-white-25px">PHOTOS</div></a></div>
+        </ui>
+      </div>
+    </div>
+    <div class="phone-nums mb-5">
+      <img class="line-2" src="/media/images/line-2.svg" />
+      <div class="x-container">
+        <div class="x8-912-769-57-73-anton saira-normal-white-25px">8-912-769-57-73 ANTON</div>
+        <div class="x8-912-756-63-54-sergei saira-normal-white-25px">8-912-756-63-54 SERGEI</div>
+        <div class="x8-912-456-67-78-yaroslav saira-normal-white-25px">8-912-456-67-78 YAROSLAV</div>
+      </div>
+    </div>
+  </div>
+  <div class="block-container">
+    <div class="main-info-block">
+      <img class="line-2-1" src="/media/images/line-2-1.svg" />
+      <div class="we-repair-gearboxes saira-normal-white-25px">
+        WE REPAIR GEARBOXES AND ENGINES OF MERCEDES, BMW, FORD, CHEVROLET, PEUGEOT AND CITROEN CARS<br /><br />WE REPAIR PARTS OF ANY
+        INTERNAL COMBUSTION ENGINE:<br />&nbsp;&nbsp; -CYLINDER HEAD AND ITS COMPONENT PARTS<br />&nbsp;&nbsp; -CYLINDER BLOCK AND ITS
+        COMPONENT PARTS<br />&nbsp;&nbsp; -CRANKSHAFT <br />&nbsp;&nbsp; -CONNECTING RODS<br />WE WASH AND LUBRICATE YOUR PARTS
+      </div>
+      <img class="line-3" src="/media/images/line-3.svg" />
+    </div>
+    <div class="advantages-block">
+      <div class="check-mark-container">
+        <img class="check-mark-1" src="/media/images/check-mark-1.png" /><img
+          class="check-mark"
+          src="/media/images/check-mark-1.png"
+        /><img class="check-mark" src="/media/images/check-mark-1.png" /><img class="check-mark" src="/media/images/check-mark-1.png" />
+      </div>
+      <div class="flex-col-1">
+        <div class="professional-equipment saira-normal-white-25px">PROFESSIONAL EQUIPMENT</div>
+        <div class="experienced-workers saira-normal-white-25px">EXPERIENCED WORKERS</div>
+        <div class="quality-assurance saira-normal-white-25px">QUALITY ASSURANCE</div>
+        <div class="fair-prices saira-normal-white-25px">FAIR PRICES</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sertificates">
+    <div class="certififcate1">
+        {% image self.banner_image original as img %}
+      <img class="certified" src="/media/images/certified-1.png" />
+      <div class="flex-col">
+        <img class="certificate-lorem" src="/media/images/certificate-lorem-1.svg"/>
+        <div class="a-box"><a href="" class="text-decoration-none"><div class="open saira-extra-light-jordy-blue-25px">OPEN</div></a></div>
+      </div>
+    </div>
+    <div class="certificate2">
+      <img class="certified" src="/media/images/certified-1.png" />
+      <div class="flex-col">
+        <img class="certificate-lorem" src="/media/images/certificate-lorem-1.svg" />
+        <div class="a-box mr-5"><a href="" class="text-decoration-none"><div class="open saira-extra-light-jordy-blue-25px">OPEN</div></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="overlap-group-container">
+      <div class="div-box">
+          <a href="" class="text-decoration-none">
+            <div class="overlap-group1 ">
+              <img class="jonathan-borba-x-r-d" src="/media/images/jonathan-borba-xrdueeg1tvi-unsplash-1.png" />
+              <div class="gearbox-repair saira-semi-bold-white-30px">GEARBOX REPAIR</div>
+            </div>
+          </a>
+      </div>
+      <div class="div-box">
+          <a href="" class="text-decoration-none">
+            <div class="overlap-group2 ">
+              <div class="exhaust-gas-inspection saira-semi-bold-white-30px">EXHAUST GAS INSPECTION</div>
+            </div>
+          </a>
+      </div>
+    </div>
+
+    <div class="flex-col-2">
+      <div class="saira-normal-white-36px">OUR SERVICES</div>
+      <div class="div-box">
+        <a href="" class="text-decoration-none">
+
+          <div class="overlap-group3 ">
+            <div class="engine-repair saira-semi-bold-white-30px">ENGINE REPAIR</div>
+          </div>
+        </a>
+      </div>
+      <div class="div-box">
+        <a href="" class="text-decoration-none">
+          <div class="overlap-group4 ">
+            <div class="interior-parts saira-semi-bold-white-30px">INTERIOR PARTS</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="overlap-group-container-1">
+      <div class="div-box">
+        <a href="" class="text-decoration-none">
+          <div class="overlap-group5">
+            <div class="body-painting saira-semi-bold-white-30px">BODY PAINTING</div>
+          </div>
+        </a>
+      </div>
+      <div class="div-box">
+        <a href="" class="text-decoration-none">
+          <div class="overlap-group6">
+            <div class="body-par-ts saira-semi-bold-white-30px">BODY PARTS</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="our-works">
+    <div class="examples-of-our-work saira-normal-white-36px">EXAMPLES OF OUR WORK</div>
+    <div class="ourworks-container">
+      <div class="ourworks"></div>
+      <div class="ourworks-1">
+        <img class="jonathan-borba-x-r-d-1" src="/media/images/jonathan-borba-xrdueeg1tvi-unsplash-1-1.png" />
+      </div>
+      <div class="ourworks-2"></div>
+      <div class="ourworks-3"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="overlap-group-6">
+      <div class="gearbox saira-semi-bold-white-36px">GEARBOX</div>
+      <div class="phone">2018-2022</div>
+    </div>
+    <div class="footer-contact-info">
+      <div class="flex-col-3">
+        <div class="usa-texas-state-ho saira-normal-white-25px">USA, TEXAS STATE, HOUSTON<br />SAMPLE ADDRES, 5</div>
+        <div class="a-box"><a href=""class="text-decoration-none"><div class="show-on-the-map">SHOW ON THE MAP</div></a></div>
+      </div>
+      <div class="flex-col-4">
+        <div class="mon-fri-800-am-600-pm-1 saira-normal-white-25px">MON-FRI 8.00AM - 6.00PM</div>
+        <div class="x8-912-456-67-78-yaroslav-1 saira-normal-white-18px">8-912-456-67-78 YAROSLAV</div>
+        <div class="x8-912-756-63-54-sergei-1 saira-normal-white-18px">8-912-756-63-54 SERGEI</div>
+        <div class="x8-912-769-57-73-anton-1 saira-normal-white-18px">8-912-769-57-73 ANTON</div>
+      </div>
+    </div>
+    <div class="footer-social-networks">
+      <a href="" class='text-decoration-none'><img class="instagram-1" src="/media/images/instagram-1.png" /></a><a href=""class='text-decoration-none'><img class="facebook-1" src="/media/images/facebook-1.png" /></a>
+    </div>
+
+  </div>
+</div>
+
 {% endblock %}
+
+</body>
+</html>
