@@ -23,6 +23,10 @@ rgba(255, 255, 255, 1);
 }
 
 
+button{
+  border: none;
+  background-color: transparent;
+}
 
 .saira-semi-bold-white-36px {
   color: var(--white);
@@ -61,6 +65,14 @@ rgba(255, 255, 255, 1);
 }
 .saira-extra-light-jordy-blue-25px {
   color: var(--jordy-blue);
+  font-family: var(--font-family-saira);
+  font-size: var(--font-size-m);
+  font-weight: 200;
+  font-style: normal;
+}
+
+.saira-extra-light-black-25px {
+  color: var(--black);
   font-family: var(--font-family-saira);
   font-size: var(--font-size-m);
   font-weight: 200;
@@ -1028,6 +1040,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+/* white/portage */
 .a-box {
     position: relative;
     overflow: hidden;
@@ -1044,5 +1058,26 @@ body::-webkit-scrollbar-thumb {
 
 .a-box:hover div {
     color: var(--portage);
+    transform: scale(1.05);
+}
+
+
+/* black/balck */
+.a-box-bl {
+    position: relative;
+    overflow: hidden;
+
+    color: var(--black);
+}
+.a-box-bl div {
+    transition: all 0.3s;
+    transform: scale(1);
+    color: var(--black);
+
+
+}
+
+.a-box-bl:hover div {
+    color: var(--black);
     transform: scale(1.05);
 }
