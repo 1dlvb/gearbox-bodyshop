@@ -23,6 +23,10 @@ rgba(255, 255, 255, 1);
 }
 
 
+html { overflow-y: scroll; }
+body { position: absolute; }
+
+
 button{
   border: none;
   background-color: transparent;

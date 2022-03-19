@@ -28,6 +28,9 @@ INSTALLED_APPS = [
     'search',
     'flex',
 
+    'phonenumber_field',
+    'crispy_forms',
+
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',

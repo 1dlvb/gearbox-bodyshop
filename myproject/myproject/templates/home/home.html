@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load wagtailcore_tags  wagtailimages_tags %}
+{% load crispy_forms_tags %}
 {% load static %}
 
 <head><title>GEARBOX Bodyshop</title></head>
@@ -23,18 +24,40 @@
           REPAIR OF GEARBOXES AND ENGINES<br />INTERIOR AND BODY PARTS<br />BODY PAINTING AND EXHAUST GAS INSPECTION
         </div>
         <div class="contact-btn-div">
-          <a href="" class="contact-btn btn btn4 middle ">CONTACT</a>
+          <a href='' type="button" data-toggle="modal" data-target="#contact" class="contact-btn btn btn4 middle ">CONTACT</a>
         </div>
       </div>
       <div class="nav">
-        <ui >
-
+        <ui>
           <div class="a-box div-box-blue"><a href="" class="text-decoration-none"><div class="pricing saira-normal-white-25px">PRICING</div></a></div>
           <div class="a-box"><a href="" class="text-decoration-none"><div class="place saira-normal-white-25px">HOME</div></a></div>
           <div class="a-box"><a href="" class="text-decoration-none"><div class="photos saira-normal-white-25px">PHOTOS</div></a></div>
         </ui>
       </div>
     </div>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="c2-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " style="color: #000;" id="contact-title">CONTACT US</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST">
+          {{ form|crispy }}
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="a-box-bl mr-3"><button data-dismiss="modal" type="button" class="text-decoration-none"><div class="close saira-extra-light-black-25px">CLOSE</div></button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="phone-nums mb-5">
       <img class="line-2" src="/media/images/line-2.svg" />
       <div class="x-container">
@@ -94,7 +117,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title " style="color: #000;" id="c1-modal-title">{{ page.certificate1_title }}</h5>
+        <h5 class="modal-title text-uppercase" style="color: #000;" id="c1-modal-title">{{ page.certificate1_title }}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -116,7 +139,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title " style="color: #000;" id="c2-modal-title">{{ page.certificate2_title }}</h5>
+        <h5 class="modal-title text-uppercase" style="color: #000;" id="c2-modal-title">{{ page.certificate2_title }}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
